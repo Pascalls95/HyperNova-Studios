@@ -1,0 +1,457 @@
+.logo {
+   margin-right: auto;
+   vertical-align: top;
+   line-height: 0px;
+
+   img {
+      width: 100px;
+   }
+}
+
+/*shared tag marks all non-indiv page bodies*/
+html {
+   body {
+      margin: 0px;
+   }
+   .shared {
+      background-color: #0A2239;
+   }
+}
+
+header {
+   width: 100%;
+   position: static;
+   background-color: rgb(0, 18, 59);
+   display: flex;
+   flex-direction: column;
+   align-items: end;
+   padding: 10px;
+}
+
+/*nav bar*/
+nav {
+   display: flex;
+   gap: 10px;
+   width: 100%;
+   margin-top: 30px;
+
+   a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      font-family: Fira Code;
+      transition: 0.2s;
+   }
+      
+
+   a:hover {
+      color:rgb(0, 123, 255);
+   }
+
+   strong {
+      font-size: 25px;
+   }
+}
+
+.logo strong {
+   font-size: 55px;
+   font-family: 'Orbitron';
+   color: aliceblue;
+   /*color: rgb(0, 77, 141);*/
+}
+
+footer {
+   text-align: center;
+   background-color:rgb(0, 18, 59);
+   margin-top: 70px;
+   color: white;
+   font-family: Fira Code;
+}
+
+h2 {
+   text-align: center;
+   color: white;
+   font-family: Fira Code;
+} p {
+   text-align: center;
+   color: white;
+   font-family: VT323;
+}
+
+/*about page*/
+.about {
+   /*background-color: rgb(24, 24, 122);*/
+   background-color: #0f1c64;
+   margin: 40px auto auto auto;
+   border-radius: 16px;
+   text-align: center;
+   padding: 10px;
+   color: rgb(190, 190, 190);
+   width: 80%;
+   font-size: 25px;
+   border-color: black;
+
+   /*no hover for non clickable elements (users should be able to easily differentiate between what can be clicked and what can't)*/
+   p {
+      width: 90%;
+      padding-left: calc((100% - 90%)/2);
+   }
+
+   .devstitle {
+      font-size: 35px;
+      font-family: 'Orbitron';
+      text-align: left;
+      position: unset;
+   }
+}
+/*main game buttons*/
+.bundle-outline {
+   h2 {
+      font-size: 35px;
+   }
+   p {
+      font-size: 25px;
+   }
+}
+.bundle {
+   display: flex;
+   justify-content: center;
+   gap: 5%;
+   align-items: center;
+   margin: 20px auto;
+   width: 70%;
+   padding-bottom: 30px;
+}
+
+/* card for each game*/
+.bundle a {
+   /*all size data goes here, NOT in ".gamecard". Learnt the hard way -ryem*/
+   width: 120%;
+}
+
+.gamecard {
+   img {
+      width: 100%;
+   }
+
+   background-color: rgb(7, 7, 80);
+   border: 2px solid rgb(31, 37, 159);
+   border-radius: 8px;
+   text-align: center;
+   transition: 0.3s;
+}
+
+.gamecard:hover {
+   transform: translateY(-5px) scale(1.05);
+   border: 2px solid rgb(57, 57, 240);
+   box-shadow: 0 0 20px 5px rgb(57, 57, 240);
+}
+
+
+/*checkout cart div*/
+.cart {
+   h1 {
+      text-align: center;
+      color: white;
+      font-family: Fira Code;
+   }
+   p {
+      text-align: right;
+      font-family: Fira Code;
+   }
+   div {
+      display: flex;
+      gap: 5%;
+      margin: 20px auto;
+      justify-content: space-between;
+      width: 50%;
+      padding: 20px;
+      align-items: center;
+      background-color: rgb(0, 18, 59);
+      border: solid 2px rgb(31, 37, 159);
+      border-radius: 16px;
+      transition: 0.3s
+   }
+   div:hover {
+      transform: translateY(-5px) scale(1.05);
+      border: 2px solid rgb(57, 57, 240);
+   }
+   }
+.confirmbtn {
+   text-align: center;
+   background-color: rgb(31, 37, 159);
+   padding: 10px;
+   border-radius: 10px;
+   text-decoration: none;
+   color: white;
+   font-family: Fira Code;
+   display: block;
+   margin: 20px 650px 310px 650px;
+   transition: 0.3s;
+}
+.confirmbtn:hover {
+   transform: translateY(-5px) scale(1.05);
+   background-color: rgb(49, 98, 214);
+}
+/*confimration page*/
+.confirm {
+   text-align: center;
+   color: white;
+   h1 {
+      font-family: Fira Code;
+   }
+   p {
+      font-family: VT323;
+      font-size: large;
+      margin-bottom: 30px;
+   }
+}
+.homebtn {
+   text-align: center;
+   background-color: rgb(31, 37, 159);
+   padding: 10px;
+   border-radius: 10px;
+   text-decoration: none;
+   color: white;
+   font-family: Fira Code;
+   display: block;
+   margin: 20px 650px 300px 650px;
+   transition: 0.3s;
+}
+.homebtn:hover {
+   transform: translateY(-5px) scale(1.05);
+   background-color: rgb(49, 98, 214);
+}
+/*game list*/
+.gamelist {
+   div {
+      background-color: rgb(0, 18, 59);
+      padding: 20px;
+      border: 2px solid rgb(49, 49, 214);
+      border-radius: 8px;
+      display: flex;
+      text-align: left;
+      gap: 30px;
+      margin: 30px auto 30px auto;
+      width: 1000px;
+      transition: 0.3s;
+      color: white;
+      text-decoration: none;
+      align-items: center;
+      font-family: Fira Code;
+   }
+
+   div:hover {
+      transform: translateY(-5px) scale(1.02);
+      border: 2px solid rgb(67, 67, 232);
+      p {
+      color: white;
+      }
+   }
+
+   p {
+      color: rgb(0, 18, 59);
+      text-decoration: none;
+      text-align: right;
+      font-family: Fira Code;
+   }
+   p:hover {
+      text-decoration: underline;
+   }
+
+   a {
+      text-decoration: none;
+   }
+
+   span {
+      color: rgb(49, 98, 214);
+   }
+
+   img {
+      width: 10%;
+      text-align: left;
+      transition: 0.3s;
+   }
+
+   /*image hovers and 'glows' separately to thediv*/
+   img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 10px rgb(67, 67, 232);
+   }
+}
+/*everyone's individual game page css will go here, 
+although make sure to like, organise it and stuff*\
+
+\*all pages*/
+
+.rootcarousel {
+    width: 150%;
+    height: 150%;
+}
+
+.rootcontainer {
+    margin: 20px auto auto auto;
+    border-radius: 16px;
+    text-align: center;
+    padding: 2px;
+    width: 80%;
+    font-family: Lato;
+    font-size: 25px;
+    border-color: black;
+
+    .img_title {
+        display: flex;
+        padding-bottom: 100px;
+        justify-content: center;
+        gap: 2%;
+        align-items: center;
+        margin: 20px auto;
+        width: 90%;
+
+    }
+}
+
+.img_title .title {
+    border-radius: 8px;
+    width: 60%;
+    font-size: 120%;
+}
+
+/*styling for the invidivdual pages. All fonts, colours and structure is the same, while images differ between pages*/
+.individual {
+    background-color: #0A2239;
+
+    .rootcontainer {
+        background-color: rgb(4, 19, 55);
+        color: rgb(190, 190, 190);
+        border: solid 2px #118bf6;
+        box-shadow: 0 0 20px 5px rgb(29, 129, 195);
+
+        .title {
+            background-color: rgb(13, 41, 124);
+            border: solid 2px rgb(17, 88, 195);
+            font-family: Geist Pixel;
+        }
+    }
+    p {
+        font-family: VT323;
+        font-size: 25px;
+    }
+    .howtoplay p {
+    margin: auto 100px 20px 100px;
+    }
+    
+    h1 {
+        color: white;
+    }
+    
+    h2 {
+        font-family: Geist Pixel;
+        margin: 50px auto 50px auto;
+    }
+    
+    h3 {
+      font-family: Geist Pixel;
+      margin: 25px auto 25px auto;
+    }
+    
+    ul {
+        text-align: center;
+        list-style-position: inside;
+        font-family: VT323;
+        color: white;
+    }
+    .buybtn {
+      text-align: center;
+      background-color: rgb(31, 37, 159);
+      padding: 10px;
+      border-radius: 10px;
+      text-decoration: none;
+      color: white;
+      font-family: Fira Code;
+      transition: 0.3s;
+      display: block;
+      margin: 30px 400px 30px 400px;
+   }
+    .buybtn:hover {
+      transform: translateY(-5px) scale(1.05);
+      background-color: rgb(49, 98, 214);
+      }
+} 
+/*carousel css*/
+.rootcarousel {
+  aspect-ratio: 4/3;
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Hide Radio Inputs */
+input[type="radio"] {
+  display: none;
+}
+
+/*put slides ontop of eachother*/
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  
+  /*critical properties*/
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/*(uses css if statements) how active image*\
+\*must be ids instead of classes due to identification*/
+#slide0:checked ~ .slide0,
+#slide1:checked ~ .slide1,
+#slide2:checked ~ .slide2,
+#slide3:checked ~ .slide3 {
+  opacity: 1;
+  visibility: visible;
+  z-index: 1;
+}
+
+/*non critical styling*/
+.rootbtn {
+  position: absolute;
+  bottom: 5px;
+  padding-top: 5px;
+  width: 100%;
+  text-align: center;
+  z-index: 2;
+  background-color:rgba(24, 24, 24, 0.9);
+}
+
+.rootbtn label{
+  display: inline-block;
+  margin: 0 5px;
+  user-select: none;
+  cursor: pointer;
+  padding: 20px 30px;
+  background: rgba(64, 64, 64, 0.6);
+}
+#slide0:checked ~ .rootbtn label[for="slide0"],
+#slide1:checked ~ .rootbtn label[for="slide1"],
+#slide2:checked ~ .rootbtn label[for="slide2"],
+#slide3:checked ~ .rootbtn label[for="slide3"] {
+  background: rgba(255, 255, 255, 0.6);
+}
+.rootbtn label:hover{
+  background: rgba(132, 132, 132, 0.6);
+}

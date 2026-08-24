@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en"><!--head section used as var init/library import area equivalent, (from C or smth) -note for ryem-->
+
+<head>
+  <meta charset="utf-8">
+  <title>HyperNova Studios - The VIRUS.exe</title>
+  <!--stylsheets for fonts+icons+styling-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Orbitron">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Code">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=VT323">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Geist+Pixel">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="icon" type="image/x-icon" href="astro.png">
+
+</head>
+<body class="individual"><!-- title header section-->
+  <header>
+    <div class="logo"><img src="astro.png"><strong>HyperNova Studios</strong></div>
+    <nav>
+      <strong><a href="index.html"><span class="fa fa-home"></span> Home</a></strong>
+      <strong><a href="games_detail.html"><span class="fa fa-gamepad"></span> Catalogue</a></strong>
+      <strong><a href="buy.html"><span class="fa fa-shopping-cart"></span> Checkout</a></strong>
+      <a href="ryem.html">Data Brokers</a>
+      <a href="rohan.html">The VIRUS.exe</a>
+      <a href="swarnika.html">CyberDash</a>
+    </nav>
+  </header>
+  <main>
+    <!--root of all items, serves to align everything-->
+    
+    <section class="rootcontainer">
+
+      <div class="img_title">
+<!--shared carousel in individual pages. each page has gameplay images of their corresponding game -->
+        <div class="rootcarousel">
+            <input type="radio" name="slide" id="slide0" checked>
+            <input type="radio" name="slide" id="slide1">
+            <input type="radio" name="slide" id="slide2">
+            <input type="radio" name="slide" id="slide3">
+<!--image links are inserted in this section-->
+            <div class="slide slide0"><img src="game_images/rohangameplay_1.png" alt="Image of gameplay from The VIRUS.exe"></div>
+            <div class="slide slide1"><img src="game_images/rohangameplay_2.png" alt="Image of gameplay from The VIRUS.exe"></div>
+            <div class="slide slide2"><img src="game_images/rohangameplay_3.png" alt="Image of gameplay from The VIRUS.exe"></div>
+            <div class="slide slide3"><img src="game_images/rohangameplay_4.png" alt="Image of gameplay from The VIRUS.exe"></div>
+
+            <div class="rootbtn">
+              <label for="slide0" class="btn"></label>
+              <label for="slide1" class="btn"></label>
+              <label for="slide2" class="btn"></label>
+              <label for="slide3" class="btn"></label>
+            </div>
+        </div>
+
+        <span class="title">
+          <h1>The VIRUS.exe</h1>
+          <p class="description">Fight corrupted enemies in strategic, turn-based battles and collect powerups to defeat THE VIRUS!</p>
+        </span>
+      </div>
+      <div class="howtoplay">
+        <h2>Synopsis</h2>
+        <p>The VIRUS.exe is a pixel art RPG where a single click of a suspicious link unleashes a dangerous digital virus into the real world. 
+            Explore the town with the mysterious Bit Converter, collect cybersecurity upgrades and battle corrupted enemies in turn based combat. 
+            Answer cybersecurity questions correctly to activate and power your attacks and stop THE VIRUS before it spreads and takes control over everything…
+        </p>
+        <h2>How to Play</h2>
+        <h3>Aim</h3>
+        <p>Collect different powerups around the town to unlock new moves. Use these moves to defeat enemies in turn-based combat, unlocking each ability by answering cybersecurity questions as you progress through the map and collect new powerups! 
+          After collecting all the powerups, use your attacks to defeat the final enemy: THE VIRUS!
+        </p>
+        <h3>Controls</h3>
+        <p>This game requires a keyboard and mouse to play.
+          <br>Use WASD or Arrow Keys to move around
+          <br>Use E to open/close your inventory
+          <br>Click on unlocked attacks in battle to use them
+        </p>
+        <h2>Platform Requirements</h2>
+        <h3>Operating System:</h3>
+        <p>Windows <span class="fab fa-windows"></span>, macOS <span class="fab fa-apple"></span>, Linux <span class="fab fa-linux"></span>, ChromeOS <span class="fab fa-chrome"></span></p>
+        <h3>Browser:</h3>
+        <p>Chrome, Safari, Microsoft Edge, FireFox, Opera, Brave or any other modern web browser.</p>
+        <h2>Buy Now</h2>
+        <p>This game is included in the Cyber Bundle</p>
+        <!--this button redirects users to the checkout page-->
+        <a class="buybtn" href="buy.html">Buy Cyber Bundle</a>
+      </div>
+
+    </section>
+  </main>
+  <!-- copyright signage and footers-->
+  <footer> © 2026 HYPERNOVA Studios </footer>
+</body>
+
+</html>

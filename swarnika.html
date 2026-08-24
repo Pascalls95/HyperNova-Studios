@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--head section used as var init/library import area equivalent, (from C or smth) -note for ryem-->
+
+<head>
+  <meta charset="utf-8">
+  <title>HyperNova Studios - CyberDash</title>
+  <!--stylsheets for fonts+icons+styling-->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Orbitron">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Code">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=VT323">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Geist+Pixel">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/x-icon" href="astro.png">
+</head>
+
+<body>
+  <!-- title header section-->
+  <header>
+    <div class="logo"><img src="astro.png"><strong>HyperNova Studios</strong></div>
+    <nav>
+      <strong><a href="index.html"><span class="fa fa-home"></span> Home</a></strong>
+      <strong><a href="games_detail.html"><span class="fa fa-gamepad"></span> Catalogue</a></strong>
+      <strong><a href="buy.html"><span class="fa fa-shopping-cart"></span> Checkout</a></strong>
+      <a href="ryem.html">Data Brokers</a>
+      <a href="rohan.html">The VIRUS.exe</a>
+      <a href="swarnika.html">CyberDash</a>
+    </nav>
+  </header>
+
+  <body class="individual">
+    <main>
+      <p></p>
+      <!--root of all items, serves to align everything-->
+      <section class="rootcontainer">
+        <div class="img_title">
+          <!--shared carousel in individual pages. each page has gameplay images of their corresponding game -->
+          <div class="rootcarousel">
+            <input type="radio" name="slide" id="slide0" checked>
+            <input type="radio" name="slide" id="slide1">
+            <input type="radio" name="slide" id="slide2">
+            <input type="radio" name="slide" id="slide3">
+
+            <div class="slide slide0"><image src ="game_images/swarnikagameplay_1.png"></div>
+            <div class="slide slide1"><image src= "game_images/swarnikagameplay_3.png"></div>
+            <div class="slide slide2"><image src = "game_images/swarnikagameplay_4.png"></image></div>
+            <div class="slide slide3"><image src ="game_images/swarnikagameplay_2.png"></div>
+
+            <div class="rootbtn">
+              <label for="slide0" class="btn"></label>
+              <label for="slide1" class="btn"></label>
+              <label for="slide2" class="btn"></label>
+              <label for="slide3" class="btn"></label>
+            </div>
+          </div>
+
+          <span class="title"><h1> CYBERDASH </h1>
+            <p class="description">Swipe, Collect and Move onto the Higher levels!</p>
+          </span>
+        </div>
+        <div class="howtoplay">
+          <h2> Synopsis</h2>
+          <p>CyberDash is an exciting educational game that teaches students important cybersafety skills while they play. Players must navigate through different levels, collecting lives and safe keys to earn points while avoiding dangerous phish keys. If a player accidentally collects a phish key, they lose a life!
+At the end of each round, players must answer a cybersafety question by selecting the correct answer. There are four challenging levels, with each level helping players learn more about how to stay safe online.
+ </p>
+
+          <h2>How to Play</h2>
+         <ul>
+          <li> Move your character around the game using the arrow keys.</li>
+          <li> Collect safe keys to earn points.</li>
+          <li> Collect lives to increase your chances of completing the level.</li>
+          <li>Avoid phish keys, as they will make you lose a life.</li>
+          <li>Reach the end of each round to receive a cybersafety question.</li>
+          <li> Choose the correct answer to the question to continue.</li>
+          <li> Complete all four levels and try to achieve the highest score possible!</li>
+         </ul>
+ </p>
+          <h3> Aim </h3>
+          <p> The aim of CyberDash is to make learning about cybersafety fun and interactive. The game teaches students how to recognise online dangers, make safe decisions and understand basic cybersafety concepts while challenging them to achieve a high score. </p>
+          <h3>Controls</h3>
+          <ul>
+<li> Up arrow - Move up</li>
+<li> Down arrow - Move down</li>
+<li> Left arrow - Move left </li>
+<li> Right arrow - Move right</li>
+
+          </ul>
+          <h2> Platform Requirements</h2>
+<p> CyberDash is designed to be played on a computer or laptop with a keyboard.
+</p>
+        <h2>Buy Now</h2>
+        <p>This game is included in the Cyber Bundle</p>
+        <!--this button redirects users to the checkout page-->
+        <a class="buybtn" href="buy.html">Buy Cyber Bundle</a>
+        </div>
+      </section>
+    </main>
+  
+<footer> © 2026 HYPERNOVA Studios</footer>
+  </body>
+
+</html>

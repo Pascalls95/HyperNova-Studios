@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en"><!--head section used as var init/library import area equivalent, (from C or smth) -note for ryem-->
+
+<head>
+  <meta charset="utf-8">
+  <title>HyperNova Studios - Data Brokers</title>
+  <!--stylsheets for fonts+icons+styling-->
+    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Orbitron">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Code">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=VT323">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Geist+Pixel">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+  <link rel="icon" type="image/x-icon" href="astro.png">
+</head>
+<body class="individual"><!-- title header section-->
+  <header>
+    <div class="logo"><img src="astro.png"><strong>HyperNova Studios</strong></div>
+    <nav>
+      <strong><a href="index.html"><span class="fa fa-home"></span> Home</a></strong>
+      <strong><a href="games_detail.html"><span class="fa fa-gamepad"></span> Catalogue</a></strong>
+      <strong><a href="buy.html"><span class="fa fa-shopping-cart"></span> Checkout</a></strong>
+      <a href="ryem.html">Data Brokers</a>
+      <a href="rohan.html">The VIRUS.exe</a>
+      <a href="swarnika.html">CyberDash</a>
+    </nav>
+  </header>
+  <main><p></p>
+    <!--root of all items, serves to align everything-->
+    
+    <section class="rootcontainer">
+
+      <div class="img_title">
+<!--"code comments in brackets are written 
+specifically for my own debugging simplicity, 
+which is why they have so much technical jargon" -ryem -->
+
+<!--shared carousel in individual pages. each page has gameplay images of their corresponding game -->
+        <div class="rootcarousel">
+            <!--hidden controller elements (act as a 2bit unsigned integer/uint_2 )-->
+            <input type="radio" name="slide" id="slide0" checked>
+            <input type="radio" name="slide" id="slide1">
+            <input type="radio" name="slide" id="slide2">
+            <input type="radio" name="slide" id="slide3">
+
+            <!--physical image objects --
+      !--(reads the 2bit uint and displays the [uint_2]th slide) -->
+            <div class="slide slide0"><img src="game_images/ryemgameplay_1.jpeg"></div>
+            <div class="slide slide1"><img src="game_images/ryemgameplay_2.jpeg"></div>
+            <div class="slide slide2"><img src="game_images/ryemgameplay_3.jpeg"></div>
+            <div class="slide slide3"><img src="game_images/ryemgameplay_4.jpeg"></div>
+
+            <!--physical buttons (sets the 2bit unsigned integer)-->
+            <div class="rootbtn">
+              <label for="slide0" class="btn"></label>
+              <label for="slide1" class="btn"></label>
+              <label for="slide2" class="btn"></label>
+              <label for="slide3" class="btn"></label>
+            </div>
+        </div>
+
+        <span class="title">
+          <h1>Data Brokers</h1>
+          <p class="description">Your only job is to get rich. Buy personal data. Sell personal data. Engage in trade on
+            the Dark Web, and most importantly;</p>
+          <p><b>Don't Go Bankrupt!</b></p>
+        </span>
+      </div>
+      <div class="howtoplay">
+        <h2>Synopsis</h2>
+        <p>You are dirt broke, and you need money. Fast.</p>
+        <p> Luckily for you, selling people's personal data on the Dark Web gets the job done quickly. Buy data from
+          data vendors, process the data to make it usable, and sell it to shady criminal groups to make a profit. But
+          beware, as the more you earn, the harder it is to keep earning.</p>
+        <p>Learn about real economic strategies, and learn what really happens to your sensitive information online.</p>
+        <h2>How to Play</h2>
+        <h3>Controls</h3>
+        <p>This game is entirely played using a mouse, there is little to no keyboard support</p>
+        <h2>Platform Requirements</h2>
+        <p>Requires an operating system with a compatible browser (chromium/gecko based, can run javascript and css)</p>
+	<h3>Compatible Operating Systems</h3>
+	<p>Literally anything that can run a browser (Windows, MacOS, Android, Linux, etc)</p>
+        <h2>Buy Now</h2>
+        <p>This game is included in the Cyber Bundle</p>
+        <!--this button redirects users to the checkout page-->
+        <a class="buybtn" href="buy.html">Buy Cyber Bundle</a>
+      </div>
+
+    </section>
+  </main>
+  <!-- copyright signage and footers-->
+  <footer> © 2026 HYPERNOVA Studios </footer>
+</body>
+
+</html>
